@@ -105,33 +105,78 @@ $ yarn tree -l 4 -o out.txt --ignore node_modules,.gitignore,.gitattributes
 ```bash
 ├── LICENSE
 ├── README.md
+├── android
+|  ├── app
+|  |  ├── BUCK
+|  |  ├── build
+|  |  |  ├── generated
+|  |  |  ├── intermediates
+|  |  |  ├── outputs
+|  |  |  └── tmp
+|  |  ├── build.gradle
+|  |  ├── build_defs.bzl
+|  |  ├── debug.keystore
+|  |  ├── proguard-rules.pro
+|  |  └── src
+|  |     ├── debug
+|  |     └── main
+|  ├── build.gradle
+|  ├── gradle
+|  |  └── wrapper
+|  |     ├── gradle-wrapper.jar
+|  |     └── gradle-wrapper.properties
+|  ├── gradle.properties
+|  ├── gradlew
+|  ├── gradlew.bat
+|  └── settings.gradle
+├── app.json
 ├── babel.config.js
+├── index.js
+├── ios
+|  ├── Podfile
+|  ├── Podfile.lock
+|  ├── mobile
+|  |  ├── AppDelegate.h
+|  |  ├── AppDelegate.m
+|  |  ├── Base.lproj
+|  |  |  └── LaunchScreen.xib
+|  |  ├── Images.xcassets
+|  |  |  ├── AppIcon.appiconset
+|  |  |  └── Contents.json
+|  |  ├── Info.plist
+|  |  └── main.m
+|  ├── mobile-tvOS
+|  |  └── Info.plist
+|  ├── mobile-tvOSTests
+|  |  └── Info.plist
+|  ├── mobile.xcodeproj
+|  |  ├── project.pbxproj
+|  |  └── xcshareddata
+|  |     └── xcschemes
+|  ├── mobile.xcworkspace
+|  |  └── contents.xcworkspacedata
+|  └── mobileTests
+|     ├── Info.plist
+|     └── mobileTests.m
 ├── jest.config.js
 ├── jsconfig.json
+├── metro.config.js
 ├── package.json
-├── public
-|  └── index.html
 ├── src
 |  ├── App.js
 |  ├── __tests__
-|  |  └── App.test.js
-|  ├── index.js
-|  ├── services
-|  |  └── api.js
-|  ├── setupTests.js
-|  └── styles.css
+|  |  └── App.spec.js
+|  └── services
+|     └── api.js
 └── yarn.lock
 
-directory: 3257 file: 13721
+directory: 2173 file: 11201
 
-ignored: directory (214)
+ignored: directory (137)
 
 ```
 ---
 ## Project in function
-
-#### initializing the project
-![Project in function][project-in-function]
 
 #### Project working
 ![project-in-function-02][project-in-function-02]
@@ -154,7 +199,7 @@ This project is under the MIT license. See the [LICENSE](./LICENSE) for more inf
 
 [project-in-function]: #
 
-[project-in-function-02]: #
+[project-in-function-02]: https://user-images.githubusercontent.com/16024701/88458013-32580400-ce61-11ea-9af5-7e96fae80dc3.gif
 [projectFunctionInVideo]: #
 
 [MylinkedIn]:https://www.linkedin.com/in/yan-brito/
